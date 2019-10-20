@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mobx-react-playground/static/css/main.38a5c9d6.chunk.css",
+    "main.js": "/mobx-react-playground/static/js/main.c7b645cf.chunk.js",
+    "main.js.map": "/mobx-react-playground/static/js/main.c7b645cf.chunk.js.map",
+    "runtime-main.js": "/mobx-react-playground/static/js/runtime-main.e35603ea.js",
+    "runtime-main.js.map": "/mobx-react-playground/static/js/runtime-main.e35603ea.js.map",
+    "static/js/2.f9ea8d65.chunk.js": "/mobx-react-playground/static/js/2.f9ea8d65.chunk.js",
+    "static/js/2.f9ea8d65.chunk.js.map": "/mobx-react-playground/static/js/2.f9ea8d65.chunk.js.map",
+    "index.html": "/mobx-react-playground/index.html",
+    "precache-manifest.3583411df18cf3093ffcbcdd6fa7ef9d.js": "/mobx-react-playground/precache-manifest.3583411df18cf3093ffcbcdd6fa7ef9d.js",
+    "service-worker.js": "/mobx-react-playground/service-worker.js",
+    "static/css/main.38a5c9d6.chunk.css.map": "/mobx-react-playground/static/css/main.38a5c9d6.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e35603ea.js",
+    "static/js/2.f9ea8d65.chunk.js",
+    "static/css/main.38a5c9d6.chunk.css",
+    "static/js/main.c7b645cf.chunk.js"
+  ]
+}
