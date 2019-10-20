@@ -1,6 +1,7 @@
 {
     "name": "mobx-react-playground",
     "version": "0.1.0",
+    "homepage": "https://42tg.github.io/mobx-react-playground/",
     "private": true,
     "dependencies": {
         "mobx": "^5.14.2",
