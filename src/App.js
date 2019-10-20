@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
 
-function App() {
+import {observer} from 'mobx-react'
+
+const Todo = observer(({todo}) => {
+    return (<li
+    key={todo.id}
+    style={{textDecoration : todo.done ? "line-through" : ""}}
+    onClick={() => todo.mark(!todo.done)}>
+    {todo.value}
+  </li>)
+})
+
+
+const App = observer((props) => {
+  const [value, setValue] = useState("")
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <form  onSubmit={e => {
+      e.preventDefault(); props.todoList.addTodo(value)}}>
+
+    <input type="text" value={value} onChange={(e)=> setValue(e.target.value)} />
+    </form>
+    <ul>
+      {props.todoList.list.map((todo) =>
+        <Todo key={todo.id} todo={todo}/>
+      )}
+    </ul>
     </div>
   );
-}
+})
 
 export default App;
